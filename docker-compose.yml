@@ -11,6 +11,12 @@ services:
       APP_SECRET: ${APP_SECRET}
       DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}?schema=public"
       REDIS_URL: "redis://redis:6379"
+      STORAGE_DRIVER: ${STORAGE_DRIVER}
+      MAIL_DRIVER: ${MAIL_DRIVER}
+      MAIL_HOST: ${MAIL_HOST}
+      MAIL_PORT: ${MAIL_PORT}
+      MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS}
+      MAIL_FROM_NAME: ${MAIL_FROM_NAME}
     ports:
       - "172.17.0.1:41007:3000"
     restart: always

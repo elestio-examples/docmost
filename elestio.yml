@@ -36,6 +36,18 @@ environments:
     value: "db"
   - key: "POSTGRES_PORT"
     value: "5432"
+  - key: "STORAGE_DRIVER"
+    value: "local"
+  - key: "MAIL_DRIVER"
+    value: "smtp"
+  - key: "MAIL_HOST"
+    value: "172.17.0.1"
+  - key: "MAIL_PORT"
+    value: "25"
+  - key: "MAIL_FROM_ADDRESS"
+    value: "[DOMAIN]@vm.elestio.app"
+  - key: "MAIL_FROM_NAME"
+    value: "Docmost"
 
 config:
   runTime: "dockerCompose"
